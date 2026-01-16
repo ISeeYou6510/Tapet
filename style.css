@@ -1,26 +1,25 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: url('tapeta.jpg'); /* albo gradient, albo prosty wzór */
-  background-size: cover;
+  background: #d8c7a9; /* jasny blat stołu */
 }
 
 #board {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
 }
 
 .note {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   padding: 10px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  position: relative;
-  cursor: grab;
+  background-color: #fffbe0; /* jak karteczka na stole */
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* rzuca cień na stół */
+  transform: rotate(var(--rotate)); /* lekko przekręcone jak na stole */
 }
 
 .note textarea {
